@@ -16,9 +16,15 @@ public class Node {
     }
     private void move(){
         //todo will move the car based on direction
+        location[0] = x;
+        location[1] = y;
     }
     private void logic(){
 
     }
+    public double[] getLocation(){
+        return location;
+    }
+
 
 }
