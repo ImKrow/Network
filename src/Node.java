@@ -25,6 +25,12 @@ public class Node {
     public double[] getLocation(){
         return location;
     }
+    public double getMinSpeed() {
+        return minSpeed;
+    }
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
 
 
 }
