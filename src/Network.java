@@ -10,6 +10,7 @@ public class Network {
     public Network(LinkedList<Node> nodes){
         this.nodes = nodes;
     }
+
     public void addNode(Node node){
         nodes.add(node);
 
