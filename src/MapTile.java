@@ -1,4 +1,8 @@
-public class MapTile {
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+
+public class MapTile extends Rectangle {
 
     private double x;
     private double y;
@@ -11,6 +15,6 @@ public class MapTile {
 
     }
     public void draw(){
-
+        this.setFill(Color.GREEN);
     }
 }
