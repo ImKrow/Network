@@ -8,12 +8,13 @@ public class Node {
     private static PathFinder pather = new PathFinder();
 
 
-    public Node(double[] location, double minSpeed, double maxSpeed){
-        this.location = location;
+    public Node(double x, double y, double minSpeed, double maxSpeed){
+
         this.minSpeed = minSpeed;
         this.maxSpeed = maxSpeed;
-        this.x = location[0];
-        this.y = location[1];
+        this.x = x;
+        this.y = y;
+        location = new double[] {x,y};
 
 
     }
