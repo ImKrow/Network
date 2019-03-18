@@ -1,3 +1,4 @@
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
@@ -14,6 +15,8 @@ public class MapController {
     GridPane grido;
     @FXML
     VBox box;
+    @FXML
+    Button ok;
 
     public void drawMap(){
 //        for(int i = 0; i<= 20; i++){
@@ -29,5 +32,9 @@ public class MapController {
         } catch(NullPointerException e){
             e.printStackTrace();
         }
+    }
+    @FXML
+    private void pressOk(){
+        Platform.exit();
     }
 }
