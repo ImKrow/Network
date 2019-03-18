@@ -39,4 +39,7 @@ public class MapController {
         //fxGrid.add(new Button(),1,1);
 
     }
+    public void addNode(){
+        Node node = new Node(1,1,1,1);
+    }
 }
