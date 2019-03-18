@@ -12,11 +12,17 @@ public class MapTile extends Rectangle {
     public MapTile(double x, double y){
         this.x = x;
         this.y = y;
+        draw();
 
     }
     public void draw(){
-//        this.setLayoutX(x*width);
-//        this.setLayoutY(y*height);
-        this.setFill(Color.GREEN);
+        System.out.println("mk");
+        this.setWidth(width);
+        this.setHeight(height);
+        if(x %2 != 0 && y % 2 ==0) {
+            this.setFill(Color.GREEN);
+        } else{
+            this.setFill(Color.BLUE);
+        }
     }
 }
