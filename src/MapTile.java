@@ -25,4 +25,5 @@ public class MapTile extends Rectangle {
             this.setFill(Color.BLUE);
         }
     }
+    //todo checking git commits
 }
