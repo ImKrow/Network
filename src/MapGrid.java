@@ -6,9 +6,9 @@ public class MapGrid {
 
     public MapGrid(){
         grid = new MapTile[20][20];
-        for(int i = 0; i< grid.length; i++){
+        for(int i = 0; i < grid.length; i++){
             for(int j  = 0; j < grid[i].length; j++){
-                grid[i][j] = new MapTile(i*10, j*10);
+                grid[i][j] = new MapTile(i, j);
             }
         }
     }
@@ -18,5 +18,8 @@ public class MapGrid {
                 tile.draw();
             }
         }
+    }
+    public MapTile[][] getGrid(){
+        return grid;
     }
 }
