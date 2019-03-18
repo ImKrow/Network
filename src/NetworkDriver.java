@@ -21,8 +21,8 @@ public class NetworkDriver extends Application {
 
 
         Network net = new Network(new LinkedList<Node>());
-//        MapController mapControl = new MapController();
-//        mapControl.drawMap();
+        MapController mapControl = new MapController();
+
 
 
     }
